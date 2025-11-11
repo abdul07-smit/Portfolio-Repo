@@ -32,14 +32,22 @@ body{
     var(--color-grey-light) 50%,
     var(--color-grey-dark) 50%,
     var(--color-grey-dark)100%);
+    min-height: 100vh;
 
 
  
 }
 
-*{
+* {
  margin: 0px;
  padding: 0px;
+ box-sizing: border-box;
+ /* outline: 1 px solid red !important; */
+}
+
+html,body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .unorderedlist{
@@ -196,6 +204,10 @@ padding: 20px;
     left: 70px;
     top: 60px;
     max-width: 300px;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: var(--hero-text-white);
     font-family: sans-serif;
  }
@@ -272,7 +284,9 @@ padding: 20px;
             align-items: center;
             background-color: var(--brands-logos-black);
             padding: 20px 40px;
-            margin: 40px auto;
+            position: relative;
+            top: -20px;
+            margin: 10px auto;
             max-width: 800px;
             border-radius: 8px;}
 
@@ -408,10 +422,12 @@ padding: 20px;
             align-self: center;
         }
         .bottom-services{
+
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 50px;
-            margin-top: 50px;
+            margin-top: 30px;
+            margin-left: 50px;
         }
         .card,.stats-grid div{
             cursor: pointer;
@@ -429,7 +445,7 @@ padding: 20px;
     gap: 20px;                
     padding: 15px 10px;
     max-width: 90%;
-    margin-top: 0 !important;
+    margin-top: -20px !important;
   }
   .brand-logos img{
     width: 45%;
@@ -497,7 +513,9 @@ padding: 20px;
                             box-sizing: border-box !important;
                             margin: 0 !important;
                             text-align: left !important;
-                            display: block !important; }
+                            display: block !important;
+                        padding-left: 15px !important;
+                    left: 5px; }
                         .james-services h3{
                             font-size: 1.3rem;
                             margin-bottom: 10px;}
@@ -516,7 +534,24 @@ padding: 20px;
                             font-size: 0.95rem;
                             color: #ff7f50;
                             text-decoration: none;
+                            display: none;
                         }
+                        .james{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                        .james>.james-services{
+                            width: 100% !important;
+                            max-width: 100% !important;
+                            align-items: flex-start !important;
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
                         .Socials-icons{
                             display: flex;
                             justify-content: flex-start !important;
@@ -553,6 +588,26 @@ padding: 20px;
                                 height: auto !important;
                                 border-radius: 50%;
                                 position: absolute;
-                            z-index: 2 !important;}                         
+                            z-index: 2 !important;}   
+                            .bottom-services{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 0 !important;
+                                max-width: 400px;
+                            }
+                            .stats-left{
+                                width: 400px;
+                            }
+                            .cards-right{
+                                flex-direction: column;
+                                gap: 10px;
+                                padding: 0 10px;}
+                                .cards-right .card{
+                                    flex: 1 1 100%;
+                                    max-width: 100%;
+                                    overflow-x: hidden;
+                                }     
+                               
+
 }
     
