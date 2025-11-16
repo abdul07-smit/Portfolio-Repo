@@ -584,7 +584,7 @@ padding: 20px;
                             .james-photo img{
                                 width: 60vw !important;
                                 top: 10%;
-                                right: 30%;
+                                right: 26%;
                                 height: auto !important;
                                 border-radius: 50%;
                                 position: absolute;
@@ -594,6 +594,7 @@ padding: 20px;
                                 flex-direction: column;
                                 margin-left: 0 !important;
                                 max-width: 400px;
+                                margin-top: 0px;
                             }
                             .stats-left{
                                 width: 400px;
@@ -601,6 +602,7 @@ padding: 20px;
                             .cards-right{
                                 flex-direction: column;
                                 gap: 10px;
+                                margin-top: 20px;
                                 padding: 0 10px;}
                                 .cards-right .card{
                                     flex: 1 1 100%;
